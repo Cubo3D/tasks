@@ -1,7 +1,11 @@
 from time import sleep
 
-print("Aperte 'ctrl + c' para parar")
-print("ou se não você verá essas mensagens HAHAHHAHA")
-sleep(2)
-while True:
-    print("Aku sayang kamu juga sayang tapi sayang")
+if input("qual é a senha? ") == "q":
+    print("senha correta. saindo...")
+    sleep(1)
+    exit()
+else:
+    print("senha errada")
+    sleep(2)
+    while True:
+        print("Aku sayang kamu juga sayang tapi sayang")
